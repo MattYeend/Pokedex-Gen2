@@ -8,13 +8,7 @@
     <div class="row">
         <div class="col-xl-3 col-md-3 col-12">
             <div class="card pokemon-card">
-                @if($pokemon->id < 10)
-                <p class="id-number">#00{{ $pokemon->id }}</p>
-                @elseif($pokemon->id < 100)
-                <p class="id-number">#0{{ $pokemon->id }}</p>
-                @else
                 <p class="id-number">#{{ $pokemon->id }}</p>
-                @endif
                 <img class="card-img-top" src="/images/{{ $pokemon->name }}.png" alt="{{ $pokemon->name }}">
                 <div class="card-body">
                 

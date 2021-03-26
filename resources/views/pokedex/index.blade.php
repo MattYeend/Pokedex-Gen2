@@ -27,13 +27,7 @@
     <div class="col-xl-2 col-md-4 col-6 pokecard">
       <a href="/pokedex/{{ $pokemon->id }}" class="pokeId">
         <div class="card pokemon-card"> <!-- style= background-color: $colors 0'colours'" -->
-          @if($pokemon->id < 10)
-            <p class="id-number">#00{{ $pokemon->id }}</p>
-          @elseif($pokemon->id < 100)
-            <p class="id-number">#0{{ $pokemon->id }}</p>
-          @else
             <p class="id-number">#{{ $pokemon->id }}</p>
-          @endif
           <img class="card-img-top" src="/images/{{ $pokemon->name }}.png" alt="{{ $pokemon->name }}">
           <div class="card-body">
             <h5 class="card-title">{{ $pokemon->name }}</h5>
