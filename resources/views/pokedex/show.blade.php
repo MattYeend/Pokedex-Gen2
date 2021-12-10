@@ -9,7 +9,7 @@
 		<div class="col-xl-3 col-md-3 col-12">
 			<div class="card pokemon-card">
 				<p class="id-number">#{{ $pokemon->id }}</p>
-				<img class="card-img-top" src="/images/{{ $pokemon->name }}.png" alt="{{ $pokemon->name }}">
+				<img class="card-img-top" src="/img/{{ $pokemon->name }}.png" alt="{{ $pokemon->name }}">
 				<div class="card-body">
 				
 				<h5 class="card-title">{{ $pokemon->name }}</h5>
